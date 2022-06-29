@@ -1,0 +1,103 @@
+$f7: #f7f7f7
+$shadow: 5px 8px 15px 0px rgba(222, 222, 222, 0.5)
+$color236: #2367e3
+body
+  background: $f7
+.text_overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  display: -moz-box
+  -moz-line-clamp: 3
+  -moz-box-orient: vertical
+  word-wrap: break-word
+  word-break: break-all
+  white-space: normal
+.title
+  padding-left: 20px
+  font-size: 36px
+  line-height: 50px
+.warp
+  margin: 50px auto 0
+  width: 90%
+  height: 500px
+  position: relative
+  display: flex
+  justify-content: space-around
+  .item_left
+    width: 35%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    .left_tiele
+      display: inline-block
+      width: 200px
+      height: 200px
+      border-radius: 50%
+      line-height: 200px
+      text-align: center
+      color: #fff
+      background: #6d9aff
+      font-size: 40px
+  .item_right
+    width: 65%
+    padding: 15px 0 0 40px
+    box-sizing: border-box
+    .r_item
+      display: flex
+      margin-bottom: 45px
+      &:nth-child(1), &:nth-child(4)
+        margin-left: -100px
+      &:nth-child(1)
+        .l_img
+          background: #6f26b5
+      &:nth-child(2)
+        .l_img
+          background: #ff7806
+      &:nth-child(3)
+        .l_img
+          background: #15c7f6
+      &:nth-child(4)
+        .l_img
+          background: #1890ff
+
+    .l_img
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      overflow: hidden
+      text-align: center
+      line-height: 60px
+
+      img
+        width: 50%
+        vertical-align: middle
+    .r_conten
+      margin: -30px 0 0 50px
+      width: 80%
+      padding: 10px
+      box-sizing: border-box
+      transition: all .3s ease 0s
+      transform: translate3d(0, 0, 0)
+      -moz-transform: translate3d(0, 0, 0)
+      -webkit-transform: translate3d(0, 0, 0)
+      &:hover
+        background: #f5f5f5
+        cursor: pointer
+        box-shadow: $shadow
+        border-radius: 10px
+        transition: all .3s ease 0s
+        transform: translate3d(0, -2px, 0)
+        -moz-transform: translate3d(0, -2px, 0)
+        -webkit-transform: translate3d(0, -2px, 0)
+      .r_title
+        color: #6d9aff
+        font-size: 24px
+        line-height: 40px
+      .r_desc
+        font-size: 16px
+        color: #666
+        line-height: 30px
+        @extend .text_overflow

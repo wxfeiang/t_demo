@@ -1,0 +1,74 @@
+$f7: #f7f7f7
+$shadow: 5px 8px 15px 0px rgba(222, 222, 222, 0.5)
+$color236: #2367e3
+body
+  background: $f7
+.text_overflow
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.warp
+  margin: 10% auto 0
+  width: 70%
+  height: 500px
+  position: relative
+  .item_box
+    display: flex
+    flex-wrap: wrap
+    .item_d
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width:
+      margin-bottom: 20px
+      .r_box
+        width: 120px
+        height: 120px
+        background: url('../img/in4.png') no-repeat center center
+        background-size: 100%
+        text-align: center
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        position: relative
+        text-align: center
+        cursor: pointer
+        &:Hover
+          .showTips
+            display: block
+        .img_box
+          width: 50px
+          height: 50px
+          background: #ccc
+        .item_title
+          font-size: 20px
+          line-height: 40px
+          color: #75f5fd
+        .showTips
+          color: #75f5fd
+          width: 70%
+          display: none
+          position: absolute
+          top: 120px
+          left: 0
+          background: url('../img/tips.png') no-repeat top center
+          background-size: 100%
+          min-height: 300px
+          padding: 60px 20px 20px
+          animation: s 0.5s
+          z-index: 99
+      .sort
+        padding: 0 20px
+        img
+          width: 30px
+
+    .item_d:last-child
+      .sort
+        display: none
+@keyframes s
+  from
+    transform: translateY(10%)
+  to
+    transform: translateY(0%)

@@ -49,8 +49,6 @@ body {
   padding: 30px 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  background: url("../img/descbg.png") no-repeat center bottom;
-  background-size: 50%;
   border-radius: 10px;
   box-sizing: border-box;
   transition: all .3s ease 0s;
@@ -67,4 +65,14 @@ body {
   transform: translate3d(0, -2px, 0);
   -moz-transform: translate3d(0, -2px, 0);
   -webkit-transform: translate3d(0, -2px, 0);
+}
+
+.item_box .item_d:nth-child(1) .desc_cont {
+  background: url("../img/titl1.png") no-repeat center bottom;
+  background-size: 60%;
+}
+
+.item_box .item_d:nth-child(2) .desc_cont {
+  background: url("../img/titl2.png") no-repeat center bottom;
+  background-size: 60%;
 }

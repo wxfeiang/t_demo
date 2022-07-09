@@ -18,8 +18,10 @@ body {
 
 .title {
   padding-left: 20px;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 50px;
+  font-weight: bold;
+  color: #6d9aff;
 }
 
 .warp {
@@ -28,7 +30,6 @@ body {
   height: 500px;
   position: relative;
   display: flex;
-  background: #fff;
 }
 
 .warp .item_left {
@@ -41,8 +42,7 @@ body {
 }
 
 .warp .item_left .left_tiele {
-  margin-left: -100px;
-  margin-bottom: -100px;
+  margin-bottom: -40px;
   height: 100%;
   width: 100%;
   background: url("../img/cen21.png") no-repeat left bottom;
@@ -53,7 +53,7 @@ body {
   width: 55%;
   padding: 0px 20px 0px;
   box-sizing: border-box;
-  margin-left: -20%;
+  margin-left: -10%;
 }
 
 .warp .item_right .r_item {
@@ -100,7 +100,7 @@ body {
 .warp .item_right .r_item .r_right {
   margin-right: -30px;
   line-height: 50px;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   color: #6d9aff;
 }
